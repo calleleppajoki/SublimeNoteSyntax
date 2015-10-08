@@ -1,0 +1,19 @@
+This is normal Text
+// This is a comment
+#  This is also a comment
+[ ] This is a todo
+[V] This is a finished todo
+[-] This is a cancelled todo
+	[ ] this is a sub ticket
+	[V] this is a finished sub ticket
+	[-] this is a cancelled sub ticket
+	... And so on
+1. Boll
+2. Burk
+3. BollBurk
+124124. Björnes Magazin
+n. Finish project
+$ sudo apt-get install somethingawesome
+- Diff remove
++ Diff add
+* unordered list
