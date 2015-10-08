@@ -8,12 +8,12 @@ This is normal Text
 	[V] this is a finished sub ticket
 	[-] this is a cancelled sub ticket
 	... And so on
-1. Boll
-2. Burk
-3. BollBurk
-124124. Björnes Magazin
-n. Finish project
+1. Ordered list item 1
+2. Ordered list item 2
+3. Ordered list item 3
+124124. Geeze, that's a long list..
+n. Unknown index, kind of useful.
 $ sudo apt-get install somethingawesome
 - Diff remove
 + Diff add
-* unordered list
+* unordered list item
