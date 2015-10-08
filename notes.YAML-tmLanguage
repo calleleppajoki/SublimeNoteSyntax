@@ -1,0 +1,48 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Notes
+scopeName: source.note
+fileTypes: [note]
+uuid: e1974961-1b56-4a0a-aa29-f3a6a0b0984b
+
+patterns:
+- comment: A clean todo
+  name: entity.name.type.note
+  match: (\t)*\[\p{Space}\].+
+- comment: A cancelled todo
+  name: keyword.operator.note
+  match: (\t)*\[\-\].+
+- comment: A finished todo
+  name: entity.name.function.note
+  match: (\t)*\[V\].+
+- comment: Numbered list
+  name: variable.parameter.note
+  match: (\t)*[0-9]+\..+
+- comment: Comment with #
+  name: comment.line.number-sign.note
+  match: (\t)*\#.+
+- comment: Comment with //
+  name: comment.line.double-slash.note
+  match: (\t)*\/\/.+
+- comment: Commandline
+  name: constant.numeric.note
+  match: (\t)*\$.+
+- comment: Index n in list
+  name: variable.parameter.note
+  match: (\t)*n\..+
+- comment: Etc in todo-list
+  name: variable.parameter.note
+  match: (\t)*\.\.\..+
+- comment: Unordered list
+  name: storage.type.note
+  match: (\t)*\*.+
+- comment: Diff add
+  name: invalid.deprecated
+  match: \+.+
+- comment: Diff remove
+  name: invalid.illegal
+  match: \-.+
+- comment: Normal text
+  name: string.quoted.single.note
+  match: .+
+...
