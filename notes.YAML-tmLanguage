@@ -7,7 +7,7 @@ uuid: e1974961-1b56-4a0a-aa29-f3a6a0b0984b
 
 patterns:
 - comment: A clean todo
-  name: entity.name.type.note
+  name: string.quoted.single.note
   match: (\t)*\[\p{Space}\].+
 - comment: A cancelled todo
   name: keyword.operator.note
