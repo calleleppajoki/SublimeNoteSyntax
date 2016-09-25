@@ -7,6 +7,6 @@ Check out Test for Notes.note to get a grasp of what it's for.
 There's plenty of guides on how to build new syntax files.
 I used these:
 
-https://bitbucket.org/guillermooo/aaapackagedev
 http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/extensibility/syntaxdefs.html
+
 https://manual.macromates.com/en/language_grammars#naming_conventions
