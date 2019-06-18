@@ -1,0 +1,49 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html
+file_extensions:
+  - note
+scope: source.note
+contexts:
+  main:
+    # A clean todo
+    - match: '(\t)*\[\p{Space}\].+'
+      #scope: string.quoted.single.note
+      scope: constant.character.escape.c
+    # A cancelled todo
+    - match: (\t)*\[\-\].+
+      scope: keyword.operator.note
+    # A finished todo
+    - match: (\t)*\[V\].+
+      #scope: entity.scope.function.note
+      scope: entity.name.type
+    # Numbered list
+    - match: (\t)*[0-9]+\..+
+      scope: variable.parameter.note
+    # Comment with #
+    - match: (\t)*\#.+
+      scope: comment.line.number-sign.note
+    # Comment with //
+    - match: (\t)*\/\/.+
+      scope: comment.line.double-slash.note
+    # Commandline
+    - match: (\t)*\$.+
+      scope: constant.numeric.note
+    # Index n in list
+    - match: (\t)*n\..+
+      scope: variable.parameter.note
+    # Etc in todo-list
+    - match: (\t)*\.\.\..+
+      scope: variable.parameter.note
+    # Unordered list
+    - match: (\t)*\*.+
+      scope: storage.type.note
+    # Diff add
+    - match: \+.+
+      scope: invalid.deprecated
+    # Diff remove
+    - match: \-.+
+      scope: invalid.illegal
+    # Normal text
+    - match: .+
+      scope: string.quoted.single.note
